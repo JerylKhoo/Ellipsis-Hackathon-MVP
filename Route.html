@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>The Four Guys</title>
+  <link rel="icon" type="image/x-icon" href="img/icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.onemap.gov.sg/web-assets/libs/leaflet/leaflet.css" />
+  <script src="https://www.onemap.gov.sg/web-assets/libs/leaflet/onemap-leaflet.js"></script>  
+</head>
+
+<header>
+  <a href="index.html"><img class="logo" src="img/logo.png"></a>
+  <div class="directory">
+    <table class="dirtable">
+      <tr>
+        <td><div class="zoom"><a class="highlight" href="About.html">ABOUT US</a></div></td>
+        <td><div class="zoom"><a class="highlight" href="Heatmap.html">HEAT MAP</a></div></td>
+        <td><div class="zoom"><a class="highlight" href="Dashboard.html">DASHBOARD</a></div></td>
+        <td><div class="zoom"><a class="highlight" href="Route.html">ROUTE FINDER</a></div></td>
+      </tr>
+    </table>
+  </div>
+</header>
+
+
+<body style="background-color: #000000">
+  <br>
+  <div id='mapdiv' style='display:block;margin: 0 auto;width:1300px;height:650px;'></div>
+      <script>
+         let sw = L.latLng(1.144, 103.535);
+         let ne = L.latLng(1.494, 104.502);
+         let bounds = L.latLngBounds(sw, ne);
+
+         let map = L.map('mapdiv', {
+            center: L.latLng(1.2868108, 103.8545349),
+            zoom: 16
+         });
+
+         map.setMaxBounds(bounds);
+
+         let basemap = L.tileLayer('https://www.onemap.gov.sg/maps/tiles/Default/{z}/{x}/{y}.png', {
+            detectRetina: true,
+            maxZoom: 19,
+            minZoom: 11,
+            /** DO NOT REMOVE the OneMap attribution below **/
+            attribution: '<img src="https://www.onemap.gov.sg/web-assets/images/logo/om_logo.png" style="height:20px;width:20px;"/>&nbsp;<a href="https://www.onemap.gov.sg/" target="_blank" rel="noopener noreferrer">OneMap</a>&nbsp;&copy;&nbsp;contributors&nbsp;&#124;&nbsp;<a href="https://www.sla.gov.sg/" target="_blank" rel="noopener noreferrer">Singapore Land Authority</a>'
+         });
+
+         basemap.addTo(map);
+
+      </script>
+</body>
+
+
+<footer class="footer">
+  <p class="copyright">ALL RIGHTS RESERVED©<br>THE FOUR GUYS</p>
+</footer>
+</html>
