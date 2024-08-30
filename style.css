@@ -1,0 +1,215 @@
+/* Misc */
+@import url('https://fonts.cdnfonts.com/css/aharoni');
+@import url('https://fonts.cdnfonts.com/css/abril-fatface');
+@import url('https://fonts.cdnfonts.com/css/libre-baskerville');
+
+html { 
+  overflow-y: hidden; 
+  overflow-x: hidden;
+}
+
+
+/* Header */
+.logo {
+  width: 300px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.directory {
+  font-family:"Calibri", sans-serif;
+  color: white;
+  position: relative;
+}
+/* delete line-height */
+.directory .dirtable {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+  width: 900px;
+  z-index: 11;
+  line-height: 5px;
+}
+
+.directory .dirtable td{
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.directory .dirtable td a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.directory .dirtable td a.active{
+  color: #C92027;
+}
+
+.directory .dirtable td .dropbtn {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.directory .dirtable td .zoom {
+  transition: transform .2s;
+}
+
+.directory .dirtable td .zoom:hover {
+  transform: scale(1.25);
+}
+
+.directory .dirtable .highlight:hover {
+  color:#CC3300;
+}
+
+
+/* INDEX BODY */
+.quote {
+  transform-origin: top left;
+  transform: rotate(-90deg) translateX(-100%) translateY(50%);
+  overflow-wrap: break-word;
+  width:600px;
+  text-align:right;
+  line-height: 55px;
+  font-size: 45px;
+  color: #ffffff;
+  font-family: 'Aharoni', sans-serif;
+  font-weight: bold;
+}
+
+.globe {
+  padding-left: 800px;
+  position: relative;
+}
+
+
+/* MATERIAL BODY */
+.materialstatement {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  margin: auto;
+  align-items: center;
+}
+
+.materialstatement span{
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: justify;
+  display: table;
+  margin: 0 auto;
+}
+
+.table-wrapper {
+  width: 1200px;
+  height: 700px;
+  overflow-x: scroll;
+  overflow-y: visible;
+  margin: 0 auto; 
+  table-layout: fixed;
+  margin-bottom: 10px;
+}
+
+.materialtable {
+  border-collapse: collapse;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+
+.materialtable tr, th, td {
+  padding: 8px;
+  text-align:center;
+  padding: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-bottom: 1px solid #999999;
+}
+
+.materialtable th {
+  background-color: #777777;
+  z-index: 2;
+}
+
+.fixed-column {
+  position: sticky;
+  left: 0;
+  z-index: 4;
+}
+
+.fixed-row {
+  position: sticky;
+  top:0;
+  z-index:5;
+  font-size:16px;
+}
+
+.fixed-column-child{
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  font-size: 16px;
+  background-color: #aaaaaa;
+  border-bottom: 1px solid #999999;
+}
+
+.compoundtable td{
+  border: none;
+  padding-right: 2px;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: left;
+}
+
+.compoundtable tr {
+  border: none;
+}
+
+.disclaimer {
+  text-align: right;
+}
+
+.disclaimer p{
+  color:white;
+  font-size: 9px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Libre Baskerville', sans-serif;
+  margin-right: 170px;
+}
+
+
+/* FOOTER */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  right:15px;
+  height: 2.5rem;
+}
+
+.footer p {
+  color: white;
+  text-align: right;
+  font-size: 10px;
+}
+
+#footer {
+  width: 100%;
+  margin-top: -10px;
+}
+
+#footer p {
+  color: white;
+  text-align: right;
+  font-size: 10px;
+}
