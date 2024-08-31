@@ -15,9 +15,10 @@ To tackle the issues stated above, our solution includes a web application with 
 
 ## Limitations
 ### 1. Hosting the website locally
-Since this is just our prototype, we are unable to host the webpage on a server, which brought about some functions that we are unable to utilize. Firstly we are unable to call some of the API that we intended to use. Therefore, our route planner was unable to work properly. Furthermore, we were also unable to make use of an SQL server as looker studio was an online service that was uncompatiable with our local host. However we had a workaround for this case which is by using Google Sheets for the scenario.
+Since this is just our prototype, we are unable to host the webpage on a server, which brought about some functions that we are unable to utilize. Firstly we are unable to call some of the API that we intended to use. Therefore, our route planner was unable to work properly adn would only be able to show a moveable map proudced by OneMAP API. Furthermore, we were also unable to make use of an SQL server as looker studio was an online service that was uncompatiable with our local host. However we had a workaround for this case which is by using Google Sheets for the scenario.
 
 ### 2. Hardware
 We were unable to get the resources for the hardware portion of the project such as the routers for the routing part of the project, therefore, we only managed to come up with our software, the webpage.
 
-## 
+## Setting Up
+Download the zip file and extract all the files and folders into a designated folder. From there you can run the index.html file to start our webpage up.
