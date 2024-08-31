@@ -21,4 +21,4 @@ Since this is just our prototype, we are unable to host the webpage on a server,
 We were unable to get the resources for the hardware portion of the project such as the routers for the routing part of the project, therefore, we only managed to come up with our software, the webpage.
 
 ## Setting Up
-Download the zip file and extract all the files and folders into a designated folder. From there you can run the index.html file to start our webpage up.
+Download the zip file and extract all the files and folders into a designated folder. From there you can run the index.html file to start our webpage up. Please also do ensure that your internet browser has been logged into SMU's google email for the dashboard to work.
